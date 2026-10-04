@@ -62,7 +62,7 @@ git clone https://github.com/your-username/customer-churn.git
 cd customer-churn
 
 python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+source venv\Scripts\activate
 
 pip install -r requirements.txt
 streamlit run app/app.py
@@ -85,10 +85,10 @@ customer-churn/
 │   └── app.py                              # Streamlit app
 ├── notebooks/
 │   ├── customer_churn.ipynb                # EDA, modelling, tuning
+├── models/
 │   ├── customer_churn_xgboost.pkl          # Trained XGBoost pipeline
+├── data/
 │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
-├── images/
-│   └── app_screenshot.png
 ├── .gitignore
 ├── requirements.txt
 └── README.md
