@@ -53,8 +53,6 @@ Missing a churner is more costly than a false alarm, so the final model is tuned
 - Lowering the threshold from 0.50 to 0.32 raises churn recall from 53% to 72%, at the cost of lower precision (66% → 56%).
 - Accuracy alone is misleading here: about 73% of customers do not churn, so recall and F1 on the churn class matter more.
 
-> **Limitation:** some of the models were evaluated on different train/test splits, so small differences between them (for example tuned Random Forest vs. XGBoost) are not conclusive. See future work.
-
 ## 🚀 Run locally
 
 ```bash
@@ -93,13 +91,6 @@ customer-churn/
 ├── requirements.txt
 └── README.md
 ```
-
-## 🔮 Future work
-
-- Fix the random seed and compare all models with 5-fold cross-validation and ROC-AUC / PR-AUC
-- Add SHAP explanations for individual predictions
-- Choose the threshold from business costs (cost of a missed churner vs. cost of a retention offer)
-- Calibrate predicted probabilities
 
 ## 🧰 Tech stack
 
