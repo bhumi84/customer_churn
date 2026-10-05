@@ -2,8 +2,7 @@
 
 An end-to-end machine learning project that predicts which telecom customers are likely to leave, with a Streamlit app for single and batch predictions.
 
-**🔗 Live demo:** _add your Streamlit Cloud link here_
-**👤 Author:** _your name_ · [GitHub](https://github.com/your-username) · [LinkedIn](https://linkedin.com/in/your-username)
+**🔗 Live demo:** https://customer-churn-ml1.streamlit.app/
 
 ---
 
